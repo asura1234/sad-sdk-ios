@@ -16,7 +16,7 @@ let package = Package(
         .package(
             name: "sa-sdk-ios",
             url: "https://github.com/asura1234/sa-sdk-ios.git",
-            .revisionItem("480a8761c5921aa216e189ae2243dba963613e82")
+            .revisionItem("24acb7e0372880e8b853484c9b523e8b9c2b206b")
         ),
     ],
     targets: [
