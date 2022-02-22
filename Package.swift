@@ -16,7 +16,7 @@ let package = Package(
         .package(
             name: "sa-sdk-ios",
             url: "https://github.com/asura1234/sa-sdk-ios.git",
-            .revisionItem("24acb7e0372880e8b853484c9b523e8b9c2b206b")
+            .revisionItem("5cc1b979f11cf947c1a78b47e1d02db291c1e961")
         ),
     ],
     targets: [
@@ -29,6 +29,7 @@ let package = Package(
             dependencies: [
                 .target(name: "SensorsAdvertising", condition: .when(platforms: [.iOS])),
                 .product(name: "SensorsAnalyticsCore", package: "sa-sdk-ios"),
+                .product(name: "SensorsAnalyticsStore", package: "sa-sdk-ios")
             ],
             /// the directory cannot be empty, there needs to be at least a single `.h` and `.m` file
             path: "SensorsAdvertisingWrapper"
